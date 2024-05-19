@@ -1,7 +1,10 @@
 # fetchimagefsm3
 
-A [re-frame](https://github.com/day8/re-frame) application designed to ... well, that part is up to
-you.
+A [re-frame](https://github.com/day8/re-frame) application designed to fetch images from picsum api. Uses the finite state machine library re-statechart which in turn uses clj statechart underhood. This app follows a state driven development methodology.
+
+The following link explains the state driven methodology that this app implements 
+
+https://blog.logrocket.com/state-driven-interfaces-with-xstate/
 
 ## Getting Started
 

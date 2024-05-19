@@ -1,0 +1,221 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; Connecting using "shadow-cljs" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in Terminal: pushd c:\Users\nyemi\Documents\react\myproject2\fetchimagefsm3 & npx.cmd shadow-cljs -d cider/cider-nrepl:0.47.1 watch :app & popd
+; Using host:port localhost:8777 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉shadow.user꞉> 
+; Creating cljs repl session...
+; Connecting cljs repl: shadow-cljs...
+; Please start your ClojureScript app (load it in the browser, or whatever is appropriate) so that Calva can connect to its REPL...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Timed out waiting for Shadow CLJS runtimes, pretending we are connected.
+; Connected session: cljs, repl: :app
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.cljs'
+nil
+; 
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+Jack-in done.
+clj꞉user꞉> 
+; [:app] Compiling ...
+; [:app] Build completed. (531 files, 2 compiled, 2 warnings, 0.78s)
+; Warnings in Library Code:
+;  Bad method signature in protocol implementation, delayed/IScheduler schedule does not declare arity 3
+;  Bad method signature in protocol implementation, delayed/IScheduler unschedule does not declare arity 2
+; [:app] Compiling ...
+; [:app] Build completed. (531 files, 2 compiled, 2 warnings, 0.71s)
+; Warnings in Library Code:
+;  Bad method signature in protocol implementation, delayed/IScheduler schedule does not declare arity 3
+;  Bad method signature in protocol implementation, delayed/IScheduler unschedule does not declare arity 2
+; [:app] Compiling ...
+; [:app] Build completed. (531 files, 2 compiled, 2 warnings, 0.68s)
+; Warnings in Library Code:
+;  Bad method signature in protocol implementation, delayed/IScheduler schedule does not declare arity 3
+;  Bad method signature in protocol implementation, delayed/IScheduler unschedule does not declare arity 2
+; [:app] Compiling ...
+; [:app] Build completed. (531 files, 2 compiled, 2 warnings, 0.63s)
+; Warnings in Library Code:
+;  Bad method signature in protocol implementation, delayed/IScheduler schedule does not declare arity 3
+;  Bad method signature in protocol implementation, delayed/IScheduler unschedule does not declare arity 2
+; [:app] Compiling ...
+; [:app] Build completed. (531 files, 2 compiled, 2 warnings, 0.47s)
+; Warnings in Library Code:
+;  Bad method signature in protocol implementation, delayed/IScheduler schedule does not declare arity 3
+;  Bad method signature in protocol implementation, delayed/IScheduler unschedule does not declare arity 2
+; [:app] Compiling ...
+; [:app] Build completed. (531 files, 2 compiled, 2 warnings, 0.41s)
+; Warnings in Library Code:
+;  Bad method signature in protocol implementation, delayed/IScheduler schedule does not declare arity 3
+;  Bad method signature in protocol implementation, delayed/IScheduler unschedule does not declare arity 2
+; [:app] Compiling ...
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: C:\Users\nyemi\Documents\react\myproject2\fetchimagefsm3\src\fetchimagefsm3\views.cljs:182:36
+; --------------------------------------------------------------------------------
+;  179 |                   :on-click (fn []
+;  180 |                               (.info js/console "get image ... ")
+;  181 |                                    
+;  182 |                                    (if (= @state ::ready) x
+; ------------------------------------------^-------------------------------------
+; Error in phase :compile-syntax-check
+; RuntimeException: Too many arguments to if
+; 	cljs.analyzer/compile-syntax-error (analyzer.cljc:773)
+; 	cljs.analyzer/compile-syntax-error (analyzer.cljc:771)
+; 	cljs.analyzer/fn--2751 (analyzer.cljc:1757)
+; 	cljs.analyzer/fn--2751 (analyzer.cljc:1752)
+; 	clojure.lang.MultiFn.invoke (MultiFn.java:252)
+; 	cljs.analyzer/analyze-seq* (analyzer.cljc:4080)
+; 	cljs.analyzer/analyze-seq* (analyzer.cljc:4078)
+; 	cljs.analyzer/analyze-seq*-wrap (analyzer.cljc:4085)
+; 	cljs.analyzer/analyze-seq*-wrap (analyzer.cljc:4083)
+; 	cljs.analyzer/analyze-seq (analyzer.cljc:4109)
+; 	cljs.analyzer/analyze-seq (analyzer.cljc:4087)
+; 	cljs.analyzer/analyze-form (analyzer.cljc:4296)
+; 	cljs.analyzer/analyze-form (analyzer.cljc:4293)
+; 	cljs.analyzer/analyze* (analyzer.cljc:4349)
+; 	cljs.analyzer/analyze* (analyzer.cljc:4341)
+; 	cljs.analyzer/analyze (analyzer.cljc:4369)
+; 	cljs.analyzer/analyze (analyzer.cljc:4352)
+; 	cljs.analyzer/analyze (analyzer.cljc:4362)
+; 	cljs.analyzer/analyze (analyzer.cljc:4352)
+; 	cljs.analyzer/analyze (analyzer.cljc:4360)
+; 	cljs.analyzer/analyze (analyzer.cljc:4352)
+; 	cljs.analyzer/fn--2979 (analyzer.cljc:2368)
+; 	cljs.analyzer/fn--2979 (analyzer.cljc:2354)
+; 	clojure.lang.MultiFn.invoke (MultiFn.java:252)
+; 	cljs.analyzer/analyze-seq* (analyzer.cljc:4080)
+; 	cljs.analyzer/analyze-seq* (analyzer.cljc:4078)
+; 	cljs.analyzer/analyze-seq*-wrap (analyzer.cljc:4085)
+; 	cljs.analyzer/analyze-seq*-wrap (analyzer.cljc:4083)
+; 	cljs.analyzer/analyze-seq (analyzer.cljc:4109)
+; 	cljs.analyzer/analyze-seq (analyzer.cljc:4087)
+; 	cljs.analyzer/analyze-form (analyzer.cljc:4296)
+; 	cljs.analyzer/analyze-form (analyzer.cljc:4293)
+; 	cljs.analyzer/analyze* (analyzer.cljc:4349)
+; 	cljs.analyzer/analyze* (analyzer.cljc:4341)
+; 	cljs.analyzer/analyze (analyzer.cljc:4369)
+; 	cljs.analyzer/analyze (analyzer.cljc:4352)
+; 	cljs.analyzer/analyze (analyzer.cljc:4362)
+; 	cljs.analyzer/analyze (analyzer.cljc:4352)
+; 	cljs.analyzer/analyze (analyzer.cljc:4360)
+; 	cljs.analyzer/analyze (analyzer.cljc:4352)
+; 	cljs.analyzer/analyze-fn-method-body (analyzer.cljc:2147)
+; 	cljs.analyzer/analyze-fn-method-body (analyzer.cljc:2145)
+; 	cljs.analyzer/analyze-fn-method (analyzer.cljc:2169)
+; 	cljs.analyzer/analyze-fn-method (analyzer.cljc:2149)
+; 	cljs.analyzer/fn--2927/fn--2935 (analyzer.cljc:2243)
+; 	clojure.core/map/fn--5935 (core.clj:2772)
+; 	clojure.lang.LazySeq.sval (LazySeq.java:42)
+; 	clojure.lang.LazySeq.seq (LazySeq.java:51)
+; 	clojure.lang.RT.seq (RT.java:535)
+; 	clojure.core/seq--5467 (core.clj:139)
+; 	clojure.core.protocols/seq-reduce (protocols.clj:24)
+; 	clojure.core.protocols/fn--8236 (protocols.clj:75)
+; 	clojure.core.protocols/fn--8236 (protocols.clj:75)
+; 	clojure.core.protocols/fn--8178/G--8173--8191 (protocols.clj:13)
+; 	clojure.core/transduce (core.clj:6947)
+; 	clojure.core/transduce (core.clj:6933)
+; 	cljs.analyzer/fn--2927 (analyzer.cljc:2244)
+; 	cljs.analyzer/fn--2927 (analyzer.cljc:2211)
+; 	clojure.lang.MultiFn.invoke (MultiFn.java:252)
+; 	cljs.analyzer/analyze-seq* (analyzer.cljc:4080)
+; 	cljs.analyzer/analyze-seq* (analyzer.cljc:4078)
+; 	cljs.analyzer/analyze-seq*-wrap (analyzer.cljc:4085)
+; 	cljs.analyzer/analyze-seq*-wrap (analyzer.cljc:4083)
+; 	cljs.analyzer/analyze-seq (analyzer.cljc:4109)
+; 	cljs.analyzer/analyze-seq (analyzer.cljc:4087)
+; 	cljs.analyzer/analyze-form (analyzer.cljc:4296)
+; 	cljs.analyzer/analyze-form (analyzer.cljc:4293)
+; 	cljs.analyzer/analyze* (analyzer.cljc:4349)
+; 	cljs.analyzer/analyze* (analyzer.cljc:4341)
+; 	cljs.analyzer/analyze (analyzer.cljc:4369)
+; 	cljs.analyzer/analyze (analyzer.cljc:4352)
+; 	cljs.analyzer/analyze-seq (analyzer.cljc:4110)
+; 	cljs.analyzer/analyze-seq (analyzer.cljc:4087)
+; 	cljs.analyzer/analyze-form (analyzer.cljc:4296)
+; 	cljs.analyzer/analyze-form (analyzer.cljc:4293)
+; 	cljs.analyzer/analyze* (analyzer.cljc:4349)
+; 	cljs.analyzer/analyze* (analyzer.cljc:4341)
+; 	cljs.analyzer/analyze (analyzer.cljc:4369)
+; 	cljs.analyzer/analyze (analyzer.cljc:4352)
+; 	cljs.analyzer/analyze (analyzer.cljc:4362)
+; 
+; --------------------------------------------------------------------------------
+;  183 |                                      (re-frame/dispatch [::rs/transition :imageFetcher ::BUTTON_CLICKED])                                                         
+;  184 |                                     (do
+;  185 |                                       (re-frame/dispatch [::rs/restart (:id fetch-image-fsm) ])
+;  186 |                                        (re-frame/dispatch [::rs/transition :imageFetcher ::BUTTON_CLICKED])                                   
+; --------------------------------------------------------------------------------
+; 
+; [:app] Compiling ...
+; [:app] Build completed. (531 files, 1 compiled, 2 warnings, 0.47s)
+; Warnings in Library Code:
+;  Bad method signature in protocol implementation, delayed/IScheduler schedule does not declare arity 3
+;  Bad method signature in protocol implementation, delayed/IScheduler unschedule does not declare arity 2
+; [:app] Compiling ...
+; [:app] Build completed. (531 files, 2 compiled, 2 warnings, 0.64s)
+; Warnings in Library Code:
+;  Bad method signature in protocol implementation, delayed/IScheduler schedule does not declare arity 3
+;  Bad method signature in protocol implementation, delayed/IScheduler unschedule does not declare arity 2
+; [:app] Compiling ...
+; [:app] Build completed. (531 files, 2 compiled, 2 warnings, 0.48s)
+; Warnings in Library Code:
+;  Bad method signature in protocol implementation, delayed/IScheduler schedule does not declare arity 3
+;  Bad method signature in protocol implementation, delayed/IScheduler unschedule does not declare arity 2
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
